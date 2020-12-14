@@ -1,0 +1,25 @@
+body {
+    background-color: #F0F8FF;
+    margin: 4px; 
+    padding: 1px;
+}
+h1{
+    color: #00008B;
+    font-style: italic;
+    font-size: 30px;
+}
+table {
+    border: 3px solid black;
+    font-size: 20px;
+}
+th {
+    background-color: #5F9EA0; 
+    color: #00008B;
+}
+tr {
+    background-color: #ADD8E6;
+}
+a {
+    font-weight: bold;
+    font-size: 20px;
+}
