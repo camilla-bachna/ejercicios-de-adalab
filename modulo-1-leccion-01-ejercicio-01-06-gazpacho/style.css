@@ -1,5 +1,5 @@
 body {
-    font: #f3f4f5;
+    background-color: #f3f4f5;
 }
 h1 {
     color: black; 
@@ -10,4 +10,7 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     color: #757575; 
+}
+span {
+    font-weight: bold;
 }
