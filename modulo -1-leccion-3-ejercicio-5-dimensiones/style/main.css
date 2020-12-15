@@ -1,0 +1,11 @@
+.dog{
+    width: 100px;
+    height: 100px;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid lightseagreen;
+    margin: auto;
+}
