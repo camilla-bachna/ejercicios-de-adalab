@@ -1,0 +1,22 @@
+body{
+    background-color: #FAF0E6;
+}
+div{
+    width: 100px;
+    height: 100px;
+}
+h1{
+   color: #FFA07A;
+}
+.block{
+    display: block;
+}
+.inline{
+    display: inline;
+}
+.inline-block{
+    display: inline-block;
+}
+.none{
+    display: none;
+}
