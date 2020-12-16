@@ -1,0 +1,15 @@
+.header {
+    background-color: darkgray;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    height: 100px;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+}
+ .item{   
+    border: 3px solid black;
+    margin: 20px;
+    padding: 10px;
+}
