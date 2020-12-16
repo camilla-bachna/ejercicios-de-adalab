@@ -1,0 +1,22 @@
+.container{
+    background-color: rgb(247, 232, 214);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 900px;
+
+}
+.article{
+    width: 45%;
+    overflow: hidden;
+    border: 1px solid black;
+    flex-grow: 1;
+}
+.item{
+    order: 1;
+    flex-grow: 2;
+}
+h1{
+    background-color: rgb(241, 196, 141);
+}
