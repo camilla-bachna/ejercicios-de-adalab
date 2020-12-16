@@ -1,0 +1,19 @@
+.container-1{
+border: 2px solid cornflowerblue;
+box-sizing: border-box;
+width: 500px;
+height: 500px;
+display: flex;
+flex-direction: row;
+}
+.container-2{
+    border: 2px solid cornflowerblue;
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    border: 2px solid cornflowerblue;
+}
