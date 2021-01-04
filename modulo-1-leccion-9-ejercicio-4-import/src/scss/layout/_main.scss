@@ -1,0 +1,14 @@
+.main {
+  background: $backgroundColor;
+  display: flex;
+  flex-direction: row;
+}
+
+.main__section{
+    text-align: center;
+    width: 50%;
+}
+.section__2{
+    width: 50%;
+    text-align: center;
+}
