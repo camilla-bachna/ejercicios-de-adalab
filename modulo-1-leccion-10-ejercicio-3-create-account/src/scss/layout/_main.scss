@@ -1,0 +1,46 @@
+.main {
+  background: $backgroundColor;
+  height: 40vh;
+  width: 25%;
+}
+.moreInfo{
+  font-size: 12px;
+}
+.dataPolicy{
+  font-size: 11px;
+}
+input[type=text]{
+  width: 45%;
+  margin: 6px 0 6px 12px;
+  border-radius: 5px;
+  height: 40px;
+}
+input[type=email]{
+  width: 94%;
+  margin: 0 0 6px 12px;
+  border-radius: 5px;
+  height: 40px;
+}
+input[type=password]{
+  width: 94%;
+  margin: 0 0 6px 12px;
+  border-radius: 5px;
+  height: 40px;
+}
+.sex{
+  display: flex;
+  font-size: 16px;
+}
+.female{
+  margin: 10px;
+}
+.male{
+  margin: 10px;
+}
+input[type=submit]{
+  display: block;
+  height: 40px;
+  width: 50%;
+  margin-left: 12px;
+  border-radius: 5px;
+}
