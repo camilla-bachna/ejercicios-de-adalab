@@ -1,0 +1,38 @@
+*{
+  margin:0;
+}
+
+.page {
+height: 100vh;
+/*background-color: grey;*/ 
+}
+.heading1{
+  color: rgb(64, 190, 190);
+}
+.heading2{
+color: cadetblue;
+}
+.form{
+  height: 30vh;
+  background-color: blanchedalmond;
+}
+.input{
+  display: block;
+  width: 40%;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.label{
+  position: relative;
+  top: -19px;
+  left: 5px; 
+  font-size: 10px;
+  color: grey;
+  transition: 1s ease;
+}
+.input:hover + .label{ /* o :focus */
+top: 0;
+font-size: 12px;
+color: black;
+font-weight: bold;
+} /* tienen que ser hermanos, aqui input y label */
