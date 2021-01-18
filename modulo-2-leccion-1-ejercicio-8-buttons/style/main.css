@@ -1,0 +1,11 @@
+.button1, .button2 {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    border: 6px solid silver;
+    background-color: teal;
+}
+
+.faded {
+    opacity: 0.7;
+}
