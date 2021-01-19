@@ -1,7 +1,7 @@
 'use strict';
 
-let ageLaura = 21;
-let daysLived = ageCamilla * 365;
+let age = 21;
+let daysLived = age * 365;
 let hoursLived = daysLived * 24;
 
 
