@@ -24,3 +24,23 @@ console.log(adalaber1.run('Estoy corriendo'));
 console.log(adalaber1.runAMarathon(`Estoy corriendo un maratón de ${adalaber1.distance} kilómetros`));
 
 addObject.innerHTML += `Mi nombre es ${adalaber2.nameAdalaber}, tengo ${adalaber2.age} años y soy ${adalaber2.job}.`;
+
+/*adalaber1.run = () => 'Estoy corriendo';                                  or
+
+ adalaber1.run = () => {
+  console.log('Estoy corriendo');
+};
+
+adalaber1.run();  
+
+adalaber2.runAMarathon = (distance) => {
+  adalaber1.run();
+
+  console.log(`un maratón de ${distance} kilómetros`);                      or
+
+  console.log(`Estoy corriendo un maratón de ${distance} kilómetros`);      without adalaber1.run();
+};
+
+adalaber2.runAMarathon(50); 
+
+*/
