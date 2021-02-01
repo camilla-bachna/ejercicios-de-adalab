@@ -1,14 +1,23 @@
 "use strict";
 
+const inputElement = document.querySelector(".js-input");
+const loginElement = document.querySelector(".js-login");
+const inputPhoto = document.querySelector(".js-photo");
+const repositoriesElement = document.querySelector(".js-repositories");
+const buttonElement = document.querySelector(".js-button");
+
 function searchUser() {
-  fetch("https://api.github.com/users/{username}")
+  const username = inputElement.value;
+  console.log(username);
+  fetch(`https://api.github.com/users/${username}`)
+    // "https://api.github.com/users/" + username
     .then((response) => response.json())
     .then((data) => {
-      const inputElement = document.querySelector(".js-input");
-      const inputValue = inputElement.value;
-      inputValue.src = data.message;
-      console.log(inputValue);
+      document.querySelector(".js-login").innerHTML = data.login;
+      inputPhoto.src = data.avatar_url;
+      inputPhoto.alt = username;
+      repositoriesElement.innerHTML = data.public_repos;
     });
-}
-const btn = document.querySelector(".js-button");
-btn.addEventListener("click", searchUser);
+} // check keys of JSON https://api.github.com/users/gootyfer
+
+buttonElement.addEventListener("click", searchUser);
