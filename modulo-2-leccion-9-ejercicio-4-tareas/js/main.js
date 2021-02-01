@@ -35,7 +35,6 @@ for (const oneTask of tasks) {
 
 listElement.innerHTML = html;*/
 
-
 //Check
 
 let html = "";
@@ -43,15 +42,19 @@ let html = "";
 for (const oneTask of tasks) {
   /* html += `<li ${oneTask.completed ? 'class= "strikethrough"' : ''}>${oneTask.name}</li>`; or */
 
-  if (oneTask.completed){
-  html += '<li class= "strikethrough">';}
-  else{html += '<li>'}
-  html+= '</li>';
+  if (oneTask.completed) {
+    html += '<li class= "strikethrough">';
+  } else {
+    html += "<li>";
+  }
+  html += "</li>";
 }
 
-html += `<input type="checked" ${oneTask.completed ? 'checked= "checked"': ''}`;
-  html += '<li>'
-  html += oneTask.name;
-  html+= '</li>';
+html += `<input type="checked" ${
+  oneTask.completed ? 'checked= "checked"' : ""
+}`;
+html += "<li>";
+html += oneTask.name;
+html += "</li>";
 
 listElement.innerHTML = html;
