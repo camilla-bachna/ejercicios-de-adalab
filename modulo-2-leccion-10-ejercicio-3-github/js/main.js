@@ -13,6 +13,7 @@ function searchUser() {
     // "https://api.github.com/users/" + username
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       document.querySelector(".js-login").innerHTML = data.login;
       inputPhoto.src = data.avatar_url;
       inputPhoto.alt = username;
