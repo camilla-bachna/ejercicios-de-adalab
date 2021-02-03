@@ -3,7 +3,15 @@
 const numbers = [1, 2, 3];
 const listElement = document.querySelector('.js-list');
 
-//create element
+for (let number = 0; number < numbers.length; number++) {
+  console.log(numbers[number]);
+  const newItem = document.createElement('li');
+  const newContent = document.createTextNode(numbers[number]);
+  newItem.appendChild(newContent);
+  listElement.appendChild(newItem);
+}
+
+/* //create element
 const newItem = document.createElement('li');
 const newItem2 = document.createElement('li');
 const newItem3 = document.createElement('li');
@@ -16,21 +24,21 @@ const newItem3 = document.createElement('li');
  */
 
 //create content
-const newContent = document.createTextNode('1');
+/* const newContent = document.createTextNode('1');
 const newContent2 = document.createTextNode('2');
 const newContent3 = document.createTextNode('3');
 
-console.log(numbers[1]);
+console.log(numbers[1]); */
 
 //add content to element
-newItem.appendChild(newContent);
+/* newItem.appendChild(newContent);
 newItem2.appendChild(newContent2);
-newItem3.appendChild(newContent3);
+newItem3.appendChild(newContent3); */
 
 //add element to DOM
-listElement.appendChild(newItem);
+/* listElement.appendChild(newItem);
 listElement.appendChild(newItem2);
-listElement.appendChild(newItem3);
+listElement.appendChild(newItem3); */
 
 //Bucle for of - array
 /*  for (const number of numbers) {
