@@ -1,0 +1,10 @@
+.container {
+  display: inline-block;
+  list-style: none;
+  background-color: rgb(176, 241, 220);
+  border-radius: 6px;
+  padding: 30px;
+  margin: 15px;
+  width: 40vw;
+  height: 25vh;
+}
