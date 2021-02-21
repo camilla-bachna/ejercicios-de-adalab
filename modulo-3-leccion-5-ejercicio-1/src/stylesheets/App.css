@@ -1,0 +1,8 @@
+.input {
+  border: 3px solid blue;
+  box-shadow: 2px 2px rgb(0, 0, 153);
+  border-radius: 6px;
+  width: 150px;
+  height: 60px;
+  font-size: 20px;
+}
