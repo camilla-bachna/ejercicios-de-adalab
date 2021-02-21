@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.cebolla {
+  background-color: rgb(176, 241, 220);
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+}
+
+.odioCebolla {
+  background-color: red;
+  width: 50%;
+  height: 50vh;
+  text-align: center;
+}
