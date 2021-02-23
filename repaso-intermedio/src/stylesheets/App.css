@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  background-color: rgb(230, 230, 230);
+  border-radius: 6px;
+  width: 100%;
+  padding: 20px;
+}
+
+.listItem {
+  font-size: 18px;
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  height: 150px;
+}
+
+.icon {
+  color: rgb(0, 175, 175);
+  font-size: 80px;
+  display: inline-block;
+}
+
+.box {
+  display: inline-block;
+  margin-left: 20px;
+  width: 250px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.memberTitle {
+  color: grey;
+  font-size: 16px;
+}
+
+.clubmembers {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  flex-wrap: wrap;
+}
+
+.members {
+  padding: 5px;
+}
