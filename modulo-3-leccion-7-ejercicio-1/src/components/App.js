@@ -10,6 +10,7 @@ class App extends React.Component {
       language: '',
       value: 'all ages',
       genres: [],
+      /* otherwise would be undefinded */
     };
 
     this.handleInput = this.handleInput.bind(this);
@@ -253,8 +254,12 @@ class App extends React.Component {
             />
             Family
           </label>
+
+          {/* send button */}
           <input type="submit" value="Enviar" className="item" />
         </form>
+
+        {/* Preview */}
         <article className="article">
           <h2 className="item">The film is {this.state.name}</h2>
           <p className="item">The description: {this.state.description}</p>
