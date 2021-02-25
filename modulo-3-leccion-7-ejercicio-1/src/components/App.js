@@ -6,7 +6,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       name: '',
-      description: ' please add a description here...',
+      description: '',
       language: '',
       value: 'all ages',
       genres: [],
@@ -18,6 +18,11 @@ class App extends React.Component {
     this.handleLanguage = this.handleLanguage.bind(this);
     this.handleRadioButton = this.handleRadioButton.bind(this);
     this.handleChecked = this.handleChecked.bind(this);
+    this.handleReset = this.handleReset.bind(this);
+  }
+
+  handleForm(event) {
+    event.preventDefault();
   }
 
   handleInput(event) {
@@ -37,7 +42,6 @@ class App extends React.Component {
   }
 
   handleChecked(event) {
-    console.log('evento');
     if (event.target.checked) {
       this.setState((prevState) => {
         prevState.genres.push(event.target.value);
@@ -55,6 +59,16 @@ class App extends React.Component {
         };
       });
     }
+  }
+
+  handleReset() {
+    this.setState({
+      name: '',
+      description: '',
+      language: '',
+      value: 'all ages',
+      genre: [],
+    });
   }
 
   //exercise 2: put everything in 1 event
@@ -84,7 +98,7 @@ class App extends React.Component {
 
     return (
       <>
-        <form className="container">
+        <form className="container" onSubmit={this.handleForm}>
           <h1 className="title">Movie time</h1>
           <p className="title">
             {' '}
@@ -107,12 +121,13 @@ class App extends React.Component {
             id="description"
             cols="30"
             rows="10"
-            value={this.state.description}
+            value={
+              this.state.description ||
+              'please write a description of the movie here...'
+            }
             onChange={this.handleDescription} //handleInput
             className="item"
-          >
-            please add a description here...
-          </textarea>
+          />
 
           {/* language */}
           <select
@@ -257,6 +272,11 @@ class App extends React.Component {
 
           {/* send button */}
           <input type="submit" value="Enviar" className="item" />
+
+          {/* reset button */}
+          <button onClick={this.handleReset} className="reset">
+            Reset
+          </button>
         </form>
 
         {/* Preview */}

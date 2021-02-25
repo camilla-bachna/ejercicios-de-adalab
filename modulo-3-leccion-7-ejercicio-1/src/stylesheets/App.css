@@ -48,3 +48,14 @@
   margin-top: 10px;
   margin-right: 5px;
 }
+
+.reset {
+  width: 70px;
+  height: 30px;
+  background-color: rgb(120, 143, 128);
+  border-radius: 6px;
+  margin: 40px;
+  box-shadow: 2px 2px grey;
+  color: white;
+  font-size: 17px;
+}
