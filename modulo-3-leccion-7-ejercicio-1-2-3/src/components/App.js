@@ -42,7 +42,7 @@ class App extends React.Component {
   }
 
   handleChecked(event) {
-    if (event.target.checked) {
+    if (event.target.checked && this.state.genres.length < 3) {
       this.setState((prevState) => {
         prevState.genres.push(event.target.value);
         return {
@@ -67,7 +67,7 @@ class App extends React.Component {
       description: '',
       language: '',
       value: 'all ages',
-      genre: [],
+      genres: [],
     });
   }
 
@@ -196,14 +196,14 @@ class App extends React.Component {
           </label>
 
           {/* genre */}
-          <h3>Genre</h3>
+          <h3>Genre (max. 3)</h3>
           <label>
             <input
               type="checkbox"
               name="genre"
               id="genre"
               value="comedy"
-              checked={this.state.genre}
+              checked={this.state.genres.includes('comedy')}
               onChange={this.handleChecked}
               className="checkbox"
             />
@@ -215,7 +215,7 @@ class App extends React.Component {
               name="genre"
               id="genre"
               value="drama"
-              checked={this.state.genre}
+              checked={this.state.genres.includes('drama')}
               onChange={this.handleChecked}
               className="checkbox"
             />
@@ -227,7 +227,7 @@ class App extends React.Component {
               name="genre"
               id="genre"
               value="fantasy"
-              checked={this.state.genre}
+              checked={this.state.genres.includes('fantasy')}
               onChange={this.handleChecked}
               className="checkbox"
             />
@@ -239,7 +239,7 @@ class App extends React.Component {
               name="genre"
               id="genre"
               value="action"
-              checked={this.state.genre}
+              checked={this.state.genres.includes('action')}
               onChange={this.handleChecked}
               className="checkbox"
             />
@@ -251,7 +251,7 @@ class App extends React.Component {
               name="genre"
               id="genre"
               value="horror"
-              checked={this.state.genre}
+              checked={this.state.genres.includes('horror')}
               onChange={this.handleChecked}
               className="checkbox"
             />
@@ -263,7 +263,7 @@ class App extends React.Component {
               name="genre"
               id="genre"
               value="family"
-              checked={this.state.genre}
+              checked={this.state.genres.includes('family')}
               onChange={this.handleChecked}
               className="checkbox"
             />
