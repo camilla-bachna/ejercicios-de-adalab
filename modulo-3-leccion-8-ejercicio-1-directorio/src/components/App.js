@@ -40,6 +40,7 @@ class App extends React.Component {
   }
 
   renderPersonsDetails() {
+    console.log(this.state.personsDetails);
     return (
       this.state.personsDetails
         .filter((personsDetail) => {
