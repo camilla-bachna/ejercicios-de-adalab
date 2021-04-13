@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'VT323', monospace;
+  font-size: 45px;
+  letter-spacing: 4px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.numbers:after {
+  animation-duration: 10s;
+  animation-name: numbers;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  content: 'CAMILLABACHNA';
+}
+@keyframes numbers {
+  from {
+    content: '0b11111000100';
+    opacity: 1;
+  }
+  7.692% {
+    opacity: 0.8;
+    content: 'Cb11111000100';
+  }
+  15.384% {
+    opacity: 0.6;
+    content: 'CA11111000100';
+  }
+  23.076% {
+    opacity: 0.4;
+    content: 'CAM1111000100';
+  }
+  30.768% {
+    opacity: 0.3;
+    content: 'CAMI111000100';
+  }
+  38.460% {
+    opacity: 0.2;
+    content: 'CAMIL11000100';
+  }
+  46.152% {
+    opacity: 0.3;
+    content: 'CAMILL1000100';
+  }
+  53.844% {
+    opacity: 0.4;
+    content: 'CAMILLA000100';
+  }
+  61.536% {
+    opacity: 0.5;
+    content: 'CAMILLAB00100';
+  }
+  69.228% {
+    opacity: 0.6;
+    content: 'CAMILLABA0100';
+  }
+  76.920% {
+    opacity: 0.7;
+    content: 'CAMILLABAC100';
+  }
+  84.612% {
+    opacity: 0.8;
+    content: 'CAMILLABACH00';
+  }
+  92.304% {
+    opacity: 0.9;
+    content: 'CAMILLABACHN0';
+  }
+  100% {
+    opacity: 1;
+    content: 'CAMILLABACHNA';
+  }
+}
