@@ -1,0 +1,174 @@
+<main class="main">
+  <form action="" method="post">
+    <label for="name" class="label">Name *</label>
+    <input
+      placeholder="First name"
+      type="text"
+      name="firstName"
+      id="name"
+      pattern="^[a-zA-Z]$"
+      title="May only contain letters"
+      required
+    />
+    <label for="surname"></label>
+    <input
+      placeholder="Surname"
+      type="text"
+      name="lastName"
+      id="surname"
+      pattern="^[a-zA-ZäöüßÄÖÜ]+$"
+      title="May only contain letters"
+      required
+    />
+    <label for="email" class="label">Email *</label>
+    <input
+      placeholder="Email"
+      type="email"
+      name="emailOrMobile"
+      id="email"
+      pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/"
+      title="Must be a valid email address"
+      required
+    />
+    <label for="email-confirmation" class="label">Confirm email *</label>
+    <input
+      placeholder="confirm email"
+      type="email"
+      name="email-confirmation"
+      id="email-confirmation"
+      pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/"
+      title="Must be a valid email address"
+      required
+    />
+    <input
+      placeholder="New password"
+      type="password"
+      name="password"
+      required
+    />
+    <label for="birthday" class="label">Birthday *</label>
+    <select type="text" id="birthday" name="birthday" class="select" required>
+      <option value="Day">Day</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>
+    </select>
+    <select type="text" id="birthday" name="birthday" class="select" required>
+      <option value="Month">Month</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+    <select type="text" id="birthday" name="birthday" class="select" required>
+      <option value="Year">Year</option>
+      <option value="1999">1981</option>
+      <option value="1999">1982</option>
+      <option value="1999">1983</option>
+      <option value="1999">1984</option>
+      <option value="1999">1985</option>
+      <option value="1999">1986</option>
+      <option value="1999">1987</option>
+      <option value="1999">1988</option>
+      <option value="1999">1989</option>
+      <option value="1999">1990</option>
+      <option value="1999">1991</option>
+      <option value="1999">1992</option>
+      <option value="1999">1993</option>
+      <option value="1999">1994</option>
+      <option value="1999">1995</option>
+      <option value="1999">1996</option>
+      <option value="1999">1997</option>
+      <option value="1999">1998</option>
+      <option value="1999">1999</option>
+      <option value="2000">2000</option>
+      <option value="2001">2001</option>
+      <option value="2002">2002</option>
+      <option value="2003">2003</option>
+      <option value="2004">2004</option>
+      <option value="2005">2005</option>
+      <option value="2006">2006</option>
+      <option value="2007">2007</option>
+      <option value="2008">2008</option>
+      <option value="2008">2009</option>
+      <option value="2008">2010</option>
+      <option value="2008">2011</option>
+      <option value="2008">2012</option>
+      <option value="2008">2013</option>
+      <option value="2008">2014</option>
+      <option value="2008">2015</option>
+      <option value="2008">2016</option>
+      <option value="2008">2017</option>
+      <option value="2008">2018</option>
+      <option value="2008">2019</option>
+      <option value="2008">2020</option>
+      <option value="2008">2021</option>
+    </select>
+    <label for="telefone" class="label">Telefone *</label>
+    <input
+      placeholder="+43"
+      type="number"
+      name="telefone"
+      id="telefone"
+      pattern="^[0-9]{11}$"
+      title="May only contain numbers"
+      required
+    />
+    <small class="moreInfo">Why do I need to provide my date of birth?</small>
+    <div class="sex">
+      <div class="female">
+        <label for="female">
+          <input id="female" type="radio" value="female" name="sex" />
+          Female
+        </label>
+      </div>
+      <div class="male">
+        <label for="male">
+          <input id="male" type="radio" value="male" name="sex" />
+          Male
+        </label>
+      </div>
+    </div>
+    <small class="dataPolicy"
+      >By clicking Create an account you agree to the Terms and our Data Policy,
+      including our Cookie Use.</small
+    >
+    <input type="submit" value="Create an account" />
+  </form>
+</main>
