@@ -1,95 +1,110 @@
 <main class="main">
-  <form action="" method="post">
-    <label for="firstName">Nombre</label>
+  <form action="" method="post" class="main__form">
+    <label for="firstName" class="main__form--label">Nombre *</label>
     <input
       placeholder="Escribe aqui tu nombre"
       id="firstName"
       type="text"
       name="firstName"
+      class="main__form--input"
       required
     />
-    <label for="lastName">Apellido</label>
+    <label for="lastName" class="main__form--label">Apellido</label>
     <input
       placeholder="Escribe aqui tus appellidos"
       id="lastName"
       type="text"
       name="lastName"
+      class="main__form--input"
     />
-    <label for="emailAddress">Correo electrónico</label>
+    <label for="emailAddress" class="main__form--label"
+      >Correo electrónico *</label
+    >
     <input
       placeholder="Escribe aqui tu email"
       type="email"
       id="emailAddress"
       name="emailAddress"
+      class="main__form--input"
       required
     />
-    <label for="street">Calle</label>
+    <label for="street" class="main__form--label">Calle *</label>
     <input
       placeholder="Escribe aqui la calle"
       type="text"
       id="street"
       name="street"
+      class="main__form--input"
       required
     />
-    <label for="city">Ciudad</label>
+    <label for="city" class="main__form--label">Ciudad *</label>
     <input
       placeholder="Escribe aqui la ciudad"
       type="text"
       id="city"
       name="city"
       value="Madrid"
+      class="main__form--input"
       required
     />
-    <label for="province">Provincia</label>
+    <label for="province" class="main__form--label">Provincia *</label>
     <input
       placeholder="Escribe aqui la provincia"
       type="text"
       id="province"
       name="province"
       value="Madrid"
+      class="main__form--input"
       required
     />
-    <label for="country">Pais</label>
+    <label for="country" class="main__form--label">Pais *</label>
     <input
       placeholder="Escribe aqui el pais"
       type="text"
       id="country"
       name="country"
       value="Espana"
+      class="main__form--input"
       required
     />
-    <label for="ID">DNI / NIE</label>
+    <label for="ID" class="main__form--label">DNI / NIE *</label>
     <input
       placeholder="Escribe aqui tu DNI/NIE"
       id="ID"
       type="text"
       name="ID"
+      class="main__form--input"
       required
     />
-    <label for="telephone">Teléfono</label>
+    <label for="telephone" class="main__form--label">Teléfono *</label>
     <input
       placeholder="Escribe aqui tu telefono"
       type="tel"
       id="telephone"
       name="telephone"
+      class="main__form--input"
       required
     />
-    <label for="password1">Contrasena</label>
+    <label for="password1" class="main__form--label">Contrasena *</label>
     <input
       placeholder="Escribe aqui tu contrasena"
       type="password"
       id="password1"
       name="password"
+      class="main__form--input"
       required
     />
-    <label for="password2">Confirmar contrasena</label>
+    <label for="password2" class="main__form--label"
+      >Confirmar contrasena *</label
+    >
     <input
       placeholder="Confirma aqui tu contrasena"
       type="password"
       id="password2"
       name="password"
+      class="main__form--input"
       required
     />
-    <input type="submit" value="Enviar info" />
+    <input type="submit" value="Enviar info" class="main__form--button" />
   </form>
 </main>
