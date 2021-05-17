@@ -4,6 +4,7 @@ const Home = () => {
   return (
     <section className="section">
       <h2>Home</h2>
+      <h3>you are home</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
         voluptatum amet eaque ut odio quasi praesentium, similique quos ex

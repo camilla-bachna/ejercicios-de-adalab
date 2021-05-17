@@ -15,7 +15,7 @@ class App extends React.Component {
             Menu:
             <ul className="nav__list">
               <li className="nav__link">
-                <Link className="nav__link--link" to="/home">
+                <Link className="nav__link--link" to="/">
                   Home
                 </Link>
               </li>
@@ -34,7 +34,7 @@ class App extends React.Component {
         </header>
         <main>
           <Switch>
-            <Route exact path="/home" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/pricing" component={Pricing} />
           </Switch>
